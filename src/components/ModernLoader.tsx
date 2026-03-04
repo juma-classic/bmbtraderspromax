@@ -23,7 +23,7 @@ const ModernLoader: React.FC<ModernLoaderProps> = ({ onFinish }) => {
         'Navigate markets with confidence',
         'Fast execution, reliable returns',
         'Growing your portfolio steadily',
-        'PLENTY FX - Your path to financial freedom',
+        'KOD TRADERS - Your path to financial freedom',
         'Elevate your trading experience',
     ];
 
@@ -244,7 +244,7 @@ const ModernLoader: React.FC<ModernLoaderProps> = ({ onFinish }) => {
             { duration: 900, text: 'Activating Trading Signals', progress: 70 },
             { duration: 700, text: 'Loading Strategies', progress: 85 },
             { duration: 600, text: 'Preparing Dashboard', progress: 95 },
-            { duration: 500, text: 'Welcome to PLENTY FX', progress: 100 },
+            { duration: 500, text: 'Welcome to KOD TRADERS', progress: 100 },
         ];
 
         let currentPhase = 0;
@@ -322,15 +322,22 @@ const ModernLoader: React.FC<ModernLoaderProps> = ({ onFinish }) => {
 
             {/* Main content */}
             <div className='zeus-loader__content'>
-                {/* PLENTY FX Logo */}
+                {/* KING OF DERIV Text Logo */}
                 <div className='zeus-loader__logo-container'>
-                    <img 
-                        src='/plentyfxlogo.png' 
-                        alt='PLENTY FX Logo' 
-                        className='zeus-loader__logo'
-                    />
+                    <h1 className='zeus-loader__king-text'>
+                        <span className='zeus-loader__king-word'>KING</span>
+                        <span className='zeus-loader__of-word'>OF</span>
+                        <span className='zeus-loader__deriv-word'>DERIV</span>
+                    </h1>
                     <div className='zeus-loader__logo-glow' />
                     <div className='zeus-loader__logo-glow zeus-loader__logo-glow--secondary' />
+                    {/* Lightning bolts around text */}
+                    <svg className='zeus-loader__text-lightning zeus-loader__text-lightning--left' viewBox='0 0 50 100'>
+                        <path d='M25 0 L15 40 L30 40 L20 100 L35 50 L25 50 L30 20 Z' fill='#FFD700' opacity='0.8' />
+                    </svg>
+                    <svg className='zeus-loader__text-lightning zeus-loader__text-lightning--right' viewBox='0 0 50 100'>
+                        <path d='M25 0 L15 40 L30 40 L20 100 L35 50 L25 50 L30 20 Z' fill='#FFD700' opacity='0.8' />
+                    </svg>
                 </div>
 
                 {/* Zeus Lightning Bolt Icon */}

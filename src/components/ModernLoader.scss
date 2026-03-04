@@ -1,4 +1,4 @@
-// PLENTY FX Loader - Premium Trading Theme
+// KOD TRADERS Loader - Premium Trading Theme
 .zeus-loader {
     position: fixed;
     top: 0;
@@ -111,12 +111,92 @@
     // Logo container
     &__logo-container {
         position: relative;
-        width: 200px;
-        height: 200px;
+        width: auto;
+        height: auto;
         display: flex;
         align-items: center;
         justify-content: center;
         margin-bottom: 1rem;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    // KING OF DERIV Text Logo
+    &__king-text {
+        font-size: 5rem;
+        font-weight: 900;
+        text-align: center;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+        position: relative;
+        z-index: 2;
+    }
+
+    &__king-word {
+        color: #FFD700;
+        text-shadow: 
+            0 0 10px rgba(255, 215, 0, 1),
+            0 0 20px rgba(255, 215, 0, 0.8),
+            0 0 30px rgba(255, 215, 0, 0.6),
+            0 0 40px rgba(255, 215, 0, 0.4),
+            0 0 70px rgba(255, 215, 0, 0.3),
+            0 0 100px rgba(255, 215, 0, 0.2);
+        animation: kingGlow 2s infinite alternate;
+        display: block;
+        line-height: 1;
+    }
+
+    &__of-word {
+        color: #FFA500;
+        font-size: 2.5rem;
+        text-shadow: 
+            0 0 10px rgba(255, 165, 0, 0.8),
+            0 0 20px rgba(255, 165, 0, 0.6),
+            0 0 30px rgba(255, 165, 0, 0.4);
+        animation: ofPulse 2s infinite ease-in-out;
+        display: block;
+        line-height: 1;
+    }
+
+    &__deriv-word {
+        color: #4169E1;
+        text-shadow: 
+            0 0 10px rgba(65, 105, 225, 1),
+            0 0 20px rgba(65, 105, 225, 0.8),
+            0 0 30px rgba(65, 105, 225, 0.6),
+            0 0 40px rgba(65, 105, 225, 0.4),
+            0 0 70px rgba(65, 105, 225, 0.3);
+        animation: derivGlow 2s infinite alternate;
+        display: block;
+        line-height: 1;
+    }
+
+    // Lightning bolts around text
+    &__text-lightning {
+        position: absolute;
+        width: 60px;
+        height: 120px;
+        filter: drop-shadow(0 0 15px rgba(255, 215, 0, 0.9));
+        animation: lightningFlicker 3s infinite;
+        z-index: 1;
+
+        &--left {
+            left: -80px;
+            top: 50%;
+            transform: translateY(-50%) rotate(-15deg);
+            animation-delay: 0s;
+        }
+
+        &--right {
+            right: -80px;
+            top: 50%;
+            transform: translateY(-50%) rotate(15deg) scaleX(-1);
+            animation-delay: 1.5s;
+        }
     }
 
     &__logo {
@@ -505,12 +585,108 @@
     }
 }
 
+@keyframes kingGlow {
+    0% {
+        text-shadow: 
+            0 0 10px rgba(255, 215, 0, 1),
+            0 0 20px rgba(255, 215, 0, 0.8),
+            0 0 30px rgba(255, 215, 0, 0.6),
+            0 0 40px rgba(255, 215, 0, 0.4),
+            0 0 70px rgba(255, 215, 0, 0.3),
+            0 0 100px rgba(255, 215, 0, 0.2);
+    }
+    100% {
+        text-shadow: 
+            0 0 20px rgba(255, 215, 0, 1),
+            0 0 30px rgba(255, 215, 0, 1),
+            0 0 40px rgba(255, 215, 0, 0.8),
+            0 0 60px rgba(255, 215, 0, 0.6),
+            0 0 90px rgba(255, 215, 0, 0.5),
+            0 0 120px rgba(255, 215, 0, 0.4);
+    }
+}
+
+@keyframes derivGlow {
+    0% {
+        text-shadow: 
+            0 0 10px rgba(65, 105, 225, 1),
+            0 0 20px rgba(65, 105, 225, 0.8),
+            0 0 30px rgba(65, 105, 225, 0.6),
+            0 0 40px rgba(65, 105, 225, 0.4),
+            0 0 70px rgba(65, 105, 225, 0.3);
+    }
+    100% {
+        text-shadow: 
+            0 0 20px rgba(65, 105, 225, 1),
+            0 0 30px rgba(65, 105, 225, 1),
+            0 0 40px rgba(65, 105, 225, 0.8),
+            0 0 60px rgba(65, 105, 225, 0.6),
+            0 0 90px rgba(65, 105, 225, 0.5);
+    }
+}
+
+@keyframes ofPulse {
+    0%, 100% {
+        opacity: 0.8;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+}
+
+@keyframes lightningFlicker {
+    0%, 100% {
+        opacity: 0.6;
+        filter: drop-shadow(0 0 15px rgba(255, 215, 0, 0.9));
+    }
+    10% {
+        opacity: 1;
+        filter: drop-shadow(0 0 25px rgba(255, 215, 0, 1));
+    }
+    20% {
+        opacity: 0.4;
+        filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.7));
+    }
+    30% {
+        opacity: 1;
+        filter: drop-shadow(0 0 30px rgba(255, 215, 0, 1));
+    }
+    40%, 90% {
+        opacity: 0.7;
+        filter: drop-shadow(0 0 15px rgba(255, 215, 0, 0.9));
+    }
+}
+
 // Responsive design
 @media (max-width: 768px) {
     .zeus-loader {
         &__logo-container {
-            width: 150px;
-            height: 150px;
+            width: auto;
+            height: auto;
+        }
+
+        &__king-text {
+            font-size: 3rem;
+            gap: 0.3rem;
+        }
+
+        &__of-word {
+            font-size: 1.5rem;
+        }
+
+        &__text-lightning {
+            width: 40px;
+            height: 80px;
+
+            &--left {
+                left: -50px;
+            }
+
+            &--right {
+                right: -50px;
+            }
         }
 
         &__lightning-container {
@@ -541,6 +717,32 @@
 
         &__tip-text {
             font-size: 0.85rem;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .zeus-loader {
+        &__king-text {
+            font-size: 2.2rem;
+            gap: 0.2rem;
+        }
+
+        &__of-word {
+            font-size: 1.2rem;
+        }
+
+        &__text-lightning {
+            width: 30px;
+            height: 60px;
+
+            &--left {
+                left: -35px;
+            }
+
+            &--right {
+                right: -35px;
+            }
         }
     }
 }
