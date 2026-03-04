@@ -429,14 +429,6 @@ const ModernLoader: React.FC<ModernLoaderProps> = ({ onFinish }) => {
                     <div className='zeus-loader__lightning-glow zeus-loader__lightning-glow--secondary' />
                 </div>
 
-                {/* Brand name */}
-                <h1 className='zeus-loader__brand'>
-                    <span className='zeus-loader__brand-zeus'>PLENTY</span>
-                    <span className='zeus-loader__brand-trading'>FX</span>
-                </h1>
-
-                <p className='zeus-loader__tagline'>Professional Trading Platform</p>
-
                 {/* Loading text */}
                 <div className='zeus-loader__text-container'>
                     <div className='zeus-loader__text'>
