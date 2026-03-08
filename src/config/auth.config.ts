@@ -15,5 +15,5 @@ export const AUTH_CONFIG = {
     PATEL_SIGNALS_STORAGE_KEY: 'patel_signals_access_granted',
 
     // Contact information for access
-    CONTACT_INFO: 'Contact KOD TRADERS for access credentials',
+    CONTACT_INFO: 'Contact GRAND TRADERS for access credentials',
 } as const;

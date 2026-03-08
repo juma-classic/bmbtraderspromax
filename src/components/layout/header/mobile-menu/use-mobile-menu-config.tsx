@@ -43,7 +43,7 @@ const useMobileMenuConfig = (client?: RootStore['client']) => {
             {
                 as: 'a',
                 href: 'https://mozaictradinghub.com',
-                label: localize('KOD TRADERS'),
+                label: localize('GRAND TRADERS'),
                 LeftComponent: BrandDerivLogoCoralIcon,
             },
             {

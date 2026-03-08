@@ -1,5 +1,5 @@
 /**
- * Centralized API Configuration for KOD TRADERS
+ * Centralized API Configuration for GRAND TRADERS
  * 
  * This file manages all Deriv API credentials and endpoints.
  * Update these values with your own app_id from https://api.deriv.com/app-registration
