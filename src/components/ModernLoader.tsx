@@ -325,9 +325,9 @@ const ModernLoader: React.FC<ModernLoaderProps> = ({ onFinish }) => {
                 {/* GRAND TRADERS Text Logo */}
                 <div className='zeus-loader__logo-container'>
                     <h1 className='zeus-loader__king-text'>
-                        <span className='zeus-loader__king-word'>KING</span>
-                        <span className='zeus-loader__of-word'>OF</span>
-                        <span className='zeus-loader__deriv-word'>DERIV</span>
+                        <span className='zeus-loader__king-word'>GRAND</span>
+                        <span className='zeus-loader__of-word'></span>
+                        <span className='zeus-loader__deriv-word'>TRADERS</span>
                     </h1>
                     <div className='zeus-loader__logo-glow' />
                     <div className='zeus-loader__logo-glow zeus-loader__logo-glow--secondary' />
